@@ -72,10 +72,7 @@ function refresh(method) {
         dataType:"json",
         success : function(data, status, xhr) {
             console.log(data);
-
             chart_data_set(data);
-
-
         },
         error: function(jqXHR, textStatus, errorThrown) {
             console.log(jqXHR.responseText);
